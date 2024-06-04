@@ -6,10 +6,12 @@ public class ContaTerminal {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Por favor, digite o número da Conta:");
-        String agencia = scanner.nextLine();
+        int numeroConta = scanner.nextInt();
+
+        scanner.nextLine(); // Limpar o buffer de entrada
 
         System.out.println("Por favor, digite o número da Agência:");
-        String numero = scanner.nextLine();
+        String numeroAgencia = scanner.nextLine();
 
         System.out.println("Por favor, digite o nome do Cliente:");
         String nomeCliente = scanner.nextLine();
@@ -17,8 +19,8 @@ public class ContaTerminal {
         System.out.println("Por favor, digite o saldo:");
         double saldo = scanner.nextDouble();
 
-        // Exibindo a mensagem com os dados inseridos
-        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " +
-                agencia + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque.");
-    }
+       // mensagem com os dados inseridos
+       System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " +
+       numeroAgencia + ", conta " + numeroConta + " e seu saldo " + saldo + " já está disponível para saque.");
+}
 }
